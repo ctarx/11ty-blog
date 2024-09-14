@@ -1,0 +1,17 @@
+{
+  "name": "11ty-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install @11ty/eleventy --save-dev",
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
