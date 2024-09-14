@@ -29,8 +29,9 @@
 ## Building
 
 To build the static site for production:
-```shell
-npm run build
+    ```shell
+    npm run build
+    ```
 
 #### Contact
 Created by [@ctarx](https://linuxrocks.online/@ctarx) - feel free to contact me!
