@@ -5,20 +5,23 @@
 ## Installation
 
 1. **Clone the Repository**
-    ```shell
-    git clone https://github.com/yourusername/eleventy-blog-template.git
-    cd eleventy-blog-template
-    ```
+
+```sh
+git clone https://github.com/yourusername/eleventy-blog-template.git
+cd eleventy-blog-template
+```
 
 2. **Install Dependencies**
-    ```shell
-    npm install
-    ```
+
+```sh
+npm install
+```
 
 3. **Run the Blog Locally**
-    ```shell
-    npm start
-    ```
+
+```sh
+npm start
+```
 
 ## Configuration
 
@@ -29,9 +32,11 @@
 ## Building
 
 To build the static site for production:
-    ```shell
-    npm run build
-    ```
 
-#### Contact
+```sh
+npm run build
+```
+
+### Contact
+
 Created by [@ctarx](https://linuxrocks.online/@ctarx) - feel free to contact me!
