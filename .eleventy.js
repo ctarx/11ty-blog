@@ -1,15 +1,19 @@
 module.exports = function (eleventyConfig) {
-  // Copy static assets to the output folder
-  eleventyConfig.addPassthroughCopy("site/assets"); // Assets dir
-  eleventyConfig.addPassthroughCopy("site/style"); // Stylesheets dir
+  // Pass through the "public" folder to the output folder
+  eleventyConfig.addPassthroughCopy("public");
+
+  // Watch for changes in the "public" folder
+  eleventyConfig.addWatchTarget("public");
 
   return {
     dir: {
-      input: "site", // Main input dir
-      includes: "_includes", // Partial templates
-      data: "_data", // Global data files
-      layouts: "_layouts", // Page layouts
-      output: "dist", // Output directory for the built website
+      input: "src", // The source directory for content and templates
+      includes: "_includes", // Directory for layouts and partials
+      data: "_data", // Data files
+      output: "_site", // Output directory for built site
     },
+    passthroughFileCopy: true,
+    markdownTemplateEngine: "njk", // Use Nunjucks for Markdown files
+    htmlTemplateEngine: "njk", // Use Nunjucks for HTML files
   };
 };
