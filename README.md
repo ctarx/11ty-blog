@@ -2,41 +2,12 @@
 
 > A simple template for an Eleventy (11ty) blog.
 
-## Installation
+## Project Status
 
-1. **Clone the Repository**
+This project is currently a work in progress.
+There may be incomplete features or areas that need further refinement.
+Feel free to contribute or provide feedback.
 
-```sh
-git clone https://github.com/yourusername/eleventy-blog-template.git
-cd eleventy-blog-template
-```
-
-2. **Install Dependencies**
-
-```sh
-npm install
-```
-
-3. **Run the Blog Locally**
-
-```sh
-npm start
-```
-
-## Configuration
-
-- **Eleventy Config**: Customize your Eleventy configuration in `.eleventy.js`.
-- **Markdown Posts**: Add your blog posts in the `src/posts` directory.
-- **Layout**: Modify your layout files in the `src/_includes` directory.
-
-## Building
-
-To build the static site for production:
-
-```sh
-npm run build
-```
-
-### Contact
+## Contact
 
 Created by [@ctarx](https://linuxrocks.online/@ctarx) - feel free to contact me!
