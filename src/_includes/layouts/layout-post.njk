@@ -1,0 +1,35 @@
+{% extends "layouts/base.njk" %}
+
+{% block main %}
+<main>
+  <h3>{{ title }}</h3>
+  <span class="published">Published on {{ date | postDate }}</span>
+  
+  {% if tags %}
+  <p>Tags:
+    {% for tag in tags %}
+      <a href="/tags/{{ tag }}">{{ tag }}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  <article>{{ content | safe }}</article>
+
+  <footer class="post__footer">
+    {% if pagination.previous %}
+      <a class="button" href="{{ pagination.previous.url }}">Prev</a>
+    {% endif %}
+    
+    <a class="button" href="#">UP</a>
+    
+    {% if pagination.next %}
+      <a class="button" href="{{ pagination.next.url }}">Next</a>
+    {% endif %}
+    
+    <!-- Show Back button only if neither previous nor next pagination exists -->
+    {% if not pagination.previous and not pagination.next %}
+      <a class="button" href="/posts/">Back</a>
+    {% endif %}
+  </footer>
+</main>
+{% endblock %}
