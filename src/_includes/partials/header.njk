@@ -1,0 +1,16 @@
+<header>
+  <nav>
+    <ul role="list">
+      <li>
+        <a {% if page.url === "/" %}aria-current="page"{% endif %} href="/">Home</a>
+      </li>
+      <li>
+        <a {% if page.url === "/posts/" %}aria-current="page"{% endif %} href="/posts/">Blog</a>
+      </li>
+      <li>
+        <a href="https://github.com/ctarx" target="_blank">GitHub</a>
+      </li>
+    </ul>
+  </nav>
+  <h1>{{ title }}</h1>
+</header>

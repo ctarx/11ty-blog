@@ -1,9 +1,9 @@
 module.exports = function (eleventyConfig) {
   // Pass through the "public" folder to the output folder
-  eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy({ public: "/" });
 
-  // Watch for changes in the "public" folder
-  eleventyConfig.addWatchTarget("public");
+  // Shortcodes
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   return {
     dir: {
